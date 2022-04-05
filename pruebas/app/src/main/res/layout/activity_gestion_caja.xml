@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_2"
+    tools:context=".Gestion_caja">
+
+    <TableLayout
+        android:id="@+id/tabla_comida"
+        android:layout_width="390dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_menu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu 1" />
+
+            <Button
+                android:id="@+id/bt_menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu 2" />
+
+            <Button
+                android:id="@+id/bt_menu3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu 3" />
+
+            <Button
+                android:id="@+id/bt_menu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu 4" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_carne1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuleton" />
+
+            <Button
+                android:id="@+id/bt_carne2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrecot" />
+
+            <Button
+                android:id="@+id/bt_carne3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solomillo" />
+
+            <Button
+                android:id="@+id/bt_carne4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cachopo" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_pescado1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dorada" />
+
+            <Button
+                android:id="@+id/bt_pescado2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salmon" />
+
+            <Button
+                android:id="@+id/bt_pescado3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lubina" />
+
+            <Button
+                android:id="@+id/bt_pescado4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lenguado" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_postre1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="t.queso" />
+
+            <Button
+                android:id="@+id/bt_postre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flan" />
+
+            <Button
+                android:id="@+id/bt_postre3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A.con leche" />
+
+            <Button
+                android:id="@+id/bt_postre4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fruta" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bt_efectivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="20dp"
+        android:text="cobrar efectivo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tabla_bebida"
+        android:layout_width="379dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="185dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_efectivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabla_comida">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_combinado1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Com1" />
+
+            <Button
+                android:id="@+id/bt_combinado2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Com2" />
+
+            <Button
+                android:id="@+id/bt_combinado3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Com3" />
+
+            <Button
+                android:id="@+id/bt_combinado4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Com4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_vino1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albariño" />
+
+            <Button
+                android:id="@+id/bt_vino2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verdejo" />
+
+            <Button
+                android:id="@+id/bt_vino3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rioja" />
+
+            <Button
+                android:id="@+id/bt_vino4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ribera" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_refresco1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coca cola" />
+
+            <Button
+                android:id="@+id/bt_refresco2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coca zero" />
+
+            <Button
+                android:id="@+id/bt_refresco3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F.naranja" />
+
+            <Button
+                android:id="@+id/bt_refresco4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F.limon" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/bt_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cafe" />
+
+            <Button
+                android:id="@+id/bt_infusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Infusion" />
+
+            <Button
+                android:id="@+id/bt_te"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tea" />
+
+            <Button
+                android:id="@+id/bt_licor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licor" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bt_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="33dp"
+        android:text="Borrar ticket"
+        app:layout_constraintBottom_toTopOf="@+id/bt_efectivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_tarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="20dp"
+        android:text="Cobrar Tarjeta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_efectivo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cuenta"
+        android:layout_width="383dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/bt_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabla_bebida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
